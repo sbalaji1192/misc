@@ -80,7 +80,7 @@ svg.selectAll("g")
     .on('mouseout', tip.hide)
     .attr("width", 0)
     .transition()
-    .duration(400)
+    .duration(300)
     .ease(d3.easeSinInOut)
     .attr("width", (d) => X(d.end_time) - X(d.start_time));
 
